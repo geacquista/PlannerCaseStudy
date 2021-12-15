@@ -15,26 +15,174 @@
     </head>
 
     <body>
-        
-      <div class="row" >
-        <div class="col">
-
+      <main style="display: flex; flex-wrap: nowrap;">
+      <nav id="navbar" class="d-flex bg-light flex-column flex-shrink-0 p-3 me-1">
+        <a class="navbar-brand" href="#">UX Case Study: WPI Planner</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">About the Planner</a>
+          <a class="nav-link" href="#item-2">All-In-One Registration Experience</a>
+          <a class="nav-link" href="#item-3">Our Process</a>
+          <a class="nav-link" href="#item-4">Users and User Needs</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3" href="#item-4-1">Who Uses These Tools?</a>
+            <a class="nav-link ms-3" href="#item-4-2">Student User Profiles</a>
+          </nav>
+          <a class="nav-link" href="#item-5">Market Research</a>
+          <a class="nav-link" href="#item-6">Identified Issues</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3" href="#item-6-1">User Experience Issues</a>
+            <a class="nav-link ms-3" href="#item-6-2">User Interface Issues</a>
+          </nav>
+          <a class="nav-link" href="#item-7">Resolutions</a>
+        </nav>
+      </nav>
+      
+      <div class="d-flex flex-column m-3" style="max-width: 80%; margin-left: auto !important;" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+        <h1 id="item-1" class="align-self-center">About the Planner</h1>
+        <img src="imgs/plannerOriginal.png" class="img-fluid align-self-center my-2" style="max-width: 80%;" alt="Screenshot of the WPI Planner">
+        <p>The WPI Planner is the existing solution for course planning at WPI. Created by students for students, it helps with the 
+          time consuming, frustrating process of schedule planning. It shows class offerings each term and information about those 
+          classes, and can generate schedules based on selected courses.</p>
+        <p>However, the course planning process goes beyond what this one site can provide. Planning a schedule goes beyond what a 
+          student needs term-to-term, and includes degree requirements, course reports, and yearly offerings. We can improve the 
+          WPI Planner site to be an even better experience for users on the site as is, and become more of a “Registration Hub” 
+          rather than “just another tool” available during registration planning time.
+        </p>
+        <h1 id="item-2" class="align-self-center">All-In-One Registration Experience</h1>
+        <p>As WPI students, we've been through the course registration process time and time again. As engineers, we know the 
+          importance of optimization and efficiency, and as UX designers, we've learned how to create a positive experience for users.</p>
+        <p><strong>Problem Statement:</strong><br>The registration process is an intense and stressful time for students. There are various 
+          tools in place that are utilized for different parts of the registration process, but this tends to disrupt any sense of efficiency 
+          or convenience when students go through the steps to find a balanced schedule.</p>
+        <p><strong>Possible Solution:</strong><br> Integrate all course planning and registration information into a comprehensive and 
+          user-friendly experience to mitigate the stress of scheduling. </p>
+        <h1 id="item-3" class="align-self-center">Our Process</h1>
+        <ul>
+          <li>Know your Brand - Implies discovering the features and usage of the planner.</li>
+          <li>Identify the users - Identifying the main users of the planner and empathizing with the users to understand 
+              their requirements.</li>
+          <li>Understand the experience - Learn about the process to uncover potential issues.</li>
+          <li>Recognize the issues - Identify the underlying UX/UI issues</li>
+          <li>Market research - research to investigate other universities' systems and their solutions to issues we've identified</li>
+          <li>Articulate solutions - Devise solutions for the underlying problems</li>
+          <li>Design Goal setting - Rethinking the design and setting goals for final design</li>
+          <li>Prototyping - visualization of design ideas</li>
+        </ul>
+        <h1 id="item-4" class="align-self-center">Users and User Needs</h1>
+        <p>Most needs and wants fall into one of two categories: short term planning and long term planning. </p>
+        <p>Short term planning is what a student is adding to their saved schedule for the next semester. 
+          This category includes needs such as "classes do not have time conflicts" for all students and "I am taking all of the 
+          classes I need to graduate" for rising seniors. Currently, the solution for this aspect of planning is solved by the 
+          Workday schedule builder or planner.wpi.edu. However, while these tools will tell you if classes are possible to take 
+          together, it is not a tailored experience and students are not warned if their classes do not provide relevant credit to 
+          their major. This type of issue currently relies on long-term planning to be solved, but it should also be prevented at the 
+          short-term level. </p>
+        <p>Long term planning includes things like creating a four year plan, or investigating prerequisites for higher level classes. 
+          Current resources include: text-based descriptions of requirements in the course catalog; major tracking sheets; and talking 
+          to advisors. This aspect is much less formalized than short term planning, but is equally if not more important.</p>
+        <p>Both forms of planning should be integrated into the same tool because of how often they inform each other. 
+          Short term planning can be a manifestation of previous long term planning, and unexpected short term opportunities will 
+          create need for long term reworks.</p>
+        <h2 id="item-4-1" class="align-self-center">Who uses these tools?</h2>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <h3 class="align-self-center">Students</h3>
+            <ul>
+              <li>Needs to choose classes that do not conflict</li>
+              <li>Needs to know if they have the necessary background for a class</li>
+              <li>Want to create "optimal" schedules</li>  
+            </ul>
+          </div>
+          <div class="col-5">
+            <h3 class="align-self-center">Advisors</h3>
+            <ul>
+              <li>Needs to be able to easily assist multiple students </li>
+              <li>Needs to know students' experience level and goals </li> 
+              <li>Wants to be able to quickly and easily provide feedback on plans </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="col">
-           
+        <h2 id="item-4-2" class="align-self-center">Student User Profiles</h2>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <h3 class="align-self-center">Freshmen</h3>
+            <ul>
+              <li>Building their first schedules</li>
+              <li>Unaware of course workloads and expectations</li>
+              <li>May not be certain of their major yet</li>  
+            </ul>
+            <p>"I'd hate for someone unsuspecting to end up in like, Soft Eng and RBE2002 … bc[sic] no one told them about the workload"</p>
+          </div>
+          <div class="col-4">
+            <h3 class="align-self-center">Sophomores, Juniors</h3>
+            <ul>
+              <li>Needs to know prerequisites for higher level courses they are interested in</li>
+              <li>Wants to be sure they are on track for filling graduation requirements</li> 
+              <li>May be interested in knowing which classes run only every other year</li>
+            </ul>
+            <p>"There are also some [descriptions] where the requirements are just false. Software security engineering says
+               it requires soft eng, but they are unrelated"</p>
+          </div>
+          <div class="col-4">
+            <h3 class="align-self-center">Seniors</h3>
+            <ul>
+              <li>Needs to know exactly which classes they need to graduate on time</li>
+              <li>Needs to know when these specific classes will be running</li> 
+              <li>Taking high level courses and MQP requires careful workload planning</li>
+            </ul>
+            <p>"If machine learning wasn't offered d term I wouldn't be able to graduate this year"</p>
+          </div>
         </div>
+        <h1 id="item-5" class="align-self-center">Market Research</h1>
+        <p> For this project, we took a look at some course planning and registration systems from other colleges. This research was 
+          somewhat difficult, as most colleges have at least some of their course materials locked behind a student login. Thus, 
+          we often need to look at the documentation about the system, rather than the system itself.</p>
+        <p>It seems that most of WPI's peer institutions for institutional research ave a rather disconnected system for 
+          planning courses. RPI, RIT, Stevens, and Case Western all appear to have a system where you register for a bunch of 
+          classes individually, rather than being able to see a whole schedule laid out. Case Western does seem to have a Shopping Cart 
+          system, likely similar to WPI's old wpi.collegescheduler.com system. However, we can't know if this actually 
+          lets you organize full schedules, since we'd need a Case Western login.</p>
+        <img src="imgs/NUportal.png" class="img-fluid align-self-center my-2" style="max-width: 80%;" alt="Screenshot of the Northeastern registration portal">
+        <p>Northeastern University is the exception to this pattern. They have created a portal somewhat like Workday where you can 
+            look at available classes, create a schedule (or plan, in their words), and then register for that schedule at 
+            registration time. Northeastern's portal also gives much more information about each course and where it fits into a student's schedule,
+            including pre- and co-requisites, as well as “attributes”, which seem to be information on what graduation requirements 
+            a class will fulfill. This is much more information than WPI's systems include, all in one place.</p>
+        <div class="row justify-content-center">
+          
+          <div class="col-5">
+            <p>Some improvements still could be made, though. The system is not very intuitive, as it requires many tutorial videos and 
+              explainer articles to understand. Information on course reports appears to be available through another part of the system, 
+              but it's not offered directly alongside course offerings. </p>
+          </div>
+          <div class="col-5">
+            <img src="imgs/NUCourse.png" class="img-fluid align-self-center my-2" style="max-width: 80%; max-height: 15rem;" alt="Information about a course from Northeastern">
+          </div>
+        </div>
+        <h1 id="item-6" class="align-self-center">Identified Issues</h1>
+        <p>Most of the issues with the current WPI Planner can be separated into two categories. Firstly, we have broad issues with the 
+          experience as a whole. These pertain to how the tool can better serve students, by giving them access to more information 
+          through a smoother experience. On the other hand, we have user interface issues, which are smaller issues with the looks of 
+          the planner. These are things that hinder the presentation of information. While they're an integral part of the user experience, 
+          we've separated them to help categorize the issues we've found.
+        </p>
+        <h2 id="item-6-1" class="align-self-center">User Experience Issues</h2>
+        <p><strong>Useability Issues</strong> - These are the bulk of our issues with the user experience. These are things that 
+        could be added for a more holistic registration experience, or things that should be changed to make the experience flow better.</p>
+        <ul>
+          <li>Missing course details - Adding course reports and major requirements to give more information in one space</li>
+          <li>Redundant processes - ????????</li>
+          <li>Negative surprises - Waiting until a user has gone through several steps to inform them of errors</li>
+        </ul>
+        <p><strong>Accessibility Issues</strong> - These are issues that affect the accessibility of the application.</p>
+          <ul>
+            <li>Use of color - The current use of color is not suitable for colorblind people, and can cause confusion.</li>
+            <li></li>
+          </ul>
+        <h2 id="item-6-2" class="align-self-center">User Interface Issues</h2>
+        <h1 id="item-7" class="align-self-center">Resolutions</h1>
       </div>
-
-      <div id="main-wrapper" class="row">
-        <div class="col">
-
-        </div>
-
-        <div class="col">
-           
-        </div>
-      </div>
+    </main>
 
       <script>
        
